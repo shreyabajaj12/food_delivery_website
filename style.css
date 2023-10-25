@@ -1,0 +1,224 @@
+html{
+    scroll-behavior: smooth;
+}
+/*css reset*/
+*{
+    margin:0;
+    padding:0;
+    font-family:'Nova Round', cursive;
+}
+/* CSS variables */
+:root{
+    /* --navbar-height:59px; */
+
+}
+#navbar{
+    display:flex;
+    align-items: center;
+    position:relative;
+    /* justify-content: center; */
+    position:sticky;
+}
+
+/*Navigation bar :Logo And Images*/
+#logo{
+    /* margin: 34px 45px; */
+    height:100px;
+            width: 100px;
+            border-radius: 50%;
+            background: linear-gradient(rgb(186, 186, 242),rgb(239, 170, 170),rgb(151, 235, 128),rgb(240, 240, 40));
+           padding: 8px;
+           float: left;
+}
+
+#logo img {
+    height:100%;
+    width:100%;
+    object-fit:cover;
+    border-radius: 50%;
+    float:left;
+
+
+}
+
+.btn{
+    background-color: rgb(241, 241, 21);
+    color:rgb(11, 10, 10);
+    font-size: 21px;
+    border-radius: 14px;
+    padding:6px 20px;
+    border:2px solid rgb(227, 50, 50);
+    margin: 17px 17px ;
+    font-weight: bolder;
+    cursor:pointer;
+}
+.btn:hover{
+    background-color: rgb(240, 240, 147);
+}
+
+#navbar ul{
+    display:flex;  
+}
+#navbar::before{
+    content: "";
+    background-color: rgb(248, 243, 243);
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    top:0px;
+    left:0px;
+    opacity:.3
+}
+#navbar ul li{
+    /* list-style-type: style type none; */
+    font-size: 1.2rem;
+    list-style: none;
+}
+#navbar ul li a{
+    display:block;
+    padding:3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: rgb(226, 61, 32);
+    /* background-color: black; */
+
+    
+}
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+}
+
+/*Navigation bar :List styling*/
+/* Home section */
+#home{
+    display:flex;
+    flex-direction: column;
+    padding:3px 200px;
+    justify-content:center;
+    align-items:center ;
+    height: 344px;
+    /* position:absolute; */
+    
+}
+#home::before{
+    content:"";
+    position:absolute;
+    top:0px;
+    left:0px;
+    background: url(../food.bg.jpg) no-repeat center center/cover;
+    height: 64%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.78;
+    
+}
+#home h1{
+    text-align: center;
+    font-family: 'Nova Round', cursive;
+    /* font-family: 'Young Serif', serif; */
+}
+#home p{
+    text-align: center;
+    /* font-size: 0.5rem; */
+    font-family: 'Nova Round', cursive;
+}
+
+
+/* services center */
+#services{
+    margin: 32px ;
+    display: flex;
+    /* border: 2px solid red; */
+}
+#services .box img{
+    width:72%;
+    height: 141px;
+    display: block;
+    margin:auto;
+    border-radius: 23px;
+
+}
+#services .box{
+    border:2px solid red;
+    padding:34px;
+    margin: -26px 6px;
+    border-radius: 23px; 
+    background-color: rgb(237, 235, 235);
+
+}
+
+
+/* Utility classes */
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+    text-align: center;
+    font-family:'Nova Round', cursive; 
+}
+.h-secondary center{
+    font-family:'Nova Round', cursive; 
+    text-align: center;
+}
+h2{
+    text-align: center;
+    font-size: 1.3rem;
+}
+/* client section */
+#clients{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+/* .client-section{
+    content:"";
+    position:absolute;
+    background:url('../food.bg.jpg');
+
+} */
+.Client-item{
+   padding: 34px;
+}
+#clients img {
+        height: 127px;
+}
+/* contact section */
+#contact{
+    position:relative;
+
+}
+#contact::before{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    opacity: 0.2;
+    z-index: -1;
+    background: url(../smartphone-571961_1280.jpg) no-repeat center center/cover;
+
+
+}
+
+#contact-box input,
+#contact-box textarea{
+    width:100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+}
+#contact-box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box form{
+    
+}
+footer{
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 2px;
+}
