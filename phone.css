@@ -1,0 +1,71 @@
+/* #home{
+
+}
+
+#services{
+    flex-direction: column;
+    margin: 134px;
+    padding: 123px 3px;
+    
+} */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nova Round', cursive;
+}
+
+/* Add a media query for small screens like Android phones */
+@media only screen and (max-width: 767px) {
+    #navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #logo {
+        margin: 10px auto;
+        float: none;
+    }
+
+    #navbar ul {
+        flex-direction: column;
+    }
+
+    #navbar ul li {
+        margin: 5px;
+    }
+
+    #home {
+        padding: 3px 20px;
+        height: auto;
+    }
+
+    #home::before {
+        height: 100%;
+    }
+
+    #services {
+        flex-direction: column;
+        margin: 15px 5px;
+    }
+
+    #services .box {
+        padding: 20px;
+        margin: 10px 0;
+    }
+
+    #clients img {
+        height: auto;
+        max-width: 100%;
+    }
+
+    #contact-box input,
+    #contact-box textarea {
+        width: 100%;
+        padding: 0.5rem;
+        border-radius: 9px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
